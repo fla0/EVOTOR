@@ -120,8 +120,8 @@
 
     <gap:config-file platform="android" parent="/manifest">
         <meta-data
-                android:name="app_uuid"
-                android:value="d133c537-b80d-4403-a240-3c94df7c73b5"/>
+                name="app_uuid"
+                value="d133c537-b80d-4403-a240-3c94df7c73b5"/>
     </gap:config-file>
 
 
