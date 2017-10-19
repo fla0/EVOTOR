@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<meta-data android:name="app_uuid" android:value="d133c537-b80d-4403-a240-3c94df7c73b5"/>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
