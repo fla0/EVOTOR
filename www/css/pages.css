@@ -1,0 +1,563 @@
+/*------------------------------------------------------------------
+Pages v1.1.0
+Theme : Default
+Generated From LESS
+[Table of contents]
+
+
+[17. Charts]
+*/
+.line-chart .nvd3 line.nv-guideline {
+  /* Vertical bar on hover in interactive chart */
+  stroke-width: 30px;
+  stroke-opacity: .04;
+  stroke: #000;
+}
+.line-chart .nvd3 .nv-groups path.nv-area {
+  /*  filled area */
+  fill-opacity: .1;
+}
+.line-chart .nvd3 .nv-groups path.nv-line {
+  /*  Line */
+  stroke-opacity: .3;
+}
+.line-chart .nvd3 .nv-axis line {
+  /*  grid lines */
+  stroke-opacity: .5;
+}
+.line-chart[data-x-grid="false"] .nv-x .tick line {
+  display: none;
+}
+.line-chart[data-y-grid="false"] .nv-y .tick line {
+  display: none;
+}
+.line-chart .domain {
+  /* domain */
+  opacity: 0;
+}
+.line-chart[data-points="true"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  /* Toggle points */
+  fill-opacity: 1;
+  stroke-opacity: .5;
+}
+.line-chart .nvtooltip table td.legend-color-guide div {
+  border-radius: 100px;
+}
+.line-chart thead .nv-pointer-events-none strong {
+  color: #afafaf;
+}
+.line-chart .nv-pointer-events-none {
+  font-size: 12px;
+}
+.line-chart .nv-pointer-events-none .value.nv-pointer-events-none {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 11px;
+  color: #afafaf;
+}
+.line-chart .nvtooltip table {
+  margin: 12px 10px 14px 15px;
+}
+.line-chart .nvtooltip.xy-tooltip.nv-pointer-events-none {
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.line-chart[data-stroke-width="1"] .nvd3 .nv-groups path.nv-line {
+  /* Line widths */
+  stroke-width: 1px;
+}
+.line-chart[data-stroke-width="1"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  /* Line widths */
+  stroke-width: 2px;
+}
+.line-chart[data-stroke-width="2"] .nvd3 .nv-groups path.nv-line {
+  stroke-width: 2px;
+}
+.line-chart[data-stroke-width="2"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke-width: 3px;
+}
+.line-chart[data-stroke-width="3"] .nvd3 .nv-groups path.nv-line {
+  stroke-width: 3px;
+}
+.line-chart[data-stroke-width="3"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke-width: 4px;
+}
+.line-chart .tick text,
+.line-chart .nvd3 .nv-axis .nv-axisMaxMin text {
+  fill: rgba(98, 98, 98, 0.5);
+  font-family: "Montserrat";
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.line-chart .nvd3.nv-scatter .nv-groups .nv-point.hover,
+.line-chart .nvd3 .nv-groups .nv-point.hover {
+  fill: inherit !important;
+  stroke: inherit !important;
+}
+/* Line widths
+------------------------------------
+*/
+.line-chart[data-line-color="master"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="master"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="master"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #626262;
+}
+.line-chart[data-line-color="success"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="success"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="success"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #10cfbd;
+}
+.line-chart[data-line-color="primary"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="primary"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="primary"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #6d5cae;
+}
+.line-chart[data-line-color="info"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="info"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="info"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #3b4752;
+}
+.line-chart[data-line-color="complete"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="complete"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="complete"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #48b0f7;
+}
+.line-chart[data-line-color="warning"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="warning"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="warning"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #f8d053;
+}
+.line-chart[data-line-color="danger"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="danger"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="danger"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #f55753;
+}
+.line-chart[data-line-color="white"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="white"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="white"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #fff;
+}
+.line-chart[data-line-color="black"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="black"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="black"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #000;
+}
+/* Area Fill colors
+------------------------------------
+*/
+.line-chart[data-area-color="master"] .nvd3 .nv-groups path.nv-area {
+  fill: #626262;
+}
+.line-chart[data-area-color="success"] .nvd3 .nv-groups path.nv-area {
+  fill: #10cfbd;
+}
+.line-chart[data-area-color="info"] .nvd3 .nv-groups path.nv-area {
+  fill: #3b4752;
+}
+.line-chart[data-area-color="complete"] .nvd3 .nv-groups path.nv-area {
+  fill: #48b0f7;
+}
+.line-chart[data-area-color="primary"] .nvd3 .nv-groups path.nv-area {
+  fill: #6d5cae;
+}
+.line-chart[data-area-color="warning"] .nvd3 .nv-groups path.nv-area {
+  fill: #f8d053;
+}
+.line-chart[data-area-color="danger"] .nvd3 .nv-groups path.nv-area {
+  fill: #f55753;
+}
+.line-chart[data-area-color="white"] .nvd3 .nv-groups path.nv-area {
+  fill: #fff;
+}
+.line-chart[data-area-color="black"] .nvd3 .nv-groups path.nv-area {
+  fill: #000;
+}
+/* Point fill colors
+------------------------------------
+*/
+.line-chart[data-point-color="master"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #626262;
+}
+.line-chart[data-point-color="success"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #10cfbd;
+}
+.line-chart[data-point-color="info"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #3b4752;
+}
+.line-chart[data-point-color="complete"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #48b0f7;
+}
+.line-chart[data-point-color="primary"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #6d5cae;
+}
+.line-chart[data-point-color="warning"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #f8d053;
+}
+.line-chart[data-point-color="danger"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #f55753;
+}
+.line-chart[data-point-color="white"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #fff;
+}
+#nvd3-line svg,
+#nvd3-line2 svg,
+#nvd3-area svg {
+  height: 500px;
+}
+/* Rickshaw Charts
+------------------------------------
+*/
+.rickshaw-chart.rickshaw_graph .detail {
+  padding-left: 15px;
+  transform: translateX(-15px);
+  width: 30px;
+  background: rgba(0, 0, 0, 0.04);
+  right: -15px;
+}
+.rickshaw-chart.rickshaw_graph .detail .item,
+.rickshaw-chart.rickshaw_graph .detail .x_label {
+  transform: translateX(15px);
+}
+.rickshaw-chart.rickshaw_graph .detail:after {
+  content: "";
+  width: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  display: block;
+}
+.rickshaw-chart .y_grid .tick.major line {
+  stroke-dasharray: 3px, 5px;
+  opacity: .7;
+}
+.rickshaw-chart.rickshaw_graph .detail .x_label {
+  display: none;
+}
+.rickshaw-chart.rickshaw_graph .detail .item {
+  line-height: 1.4;
+  padding: 0.5em;
+}
+.rickshaw-chart.rickshaw_graph .detail_swatch {
+  float: right;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px 0 0;
+}
+.rickshaw-chart.rickshaw_graph .detail .date {
+  font-size: 11px;
+  color: #a0a0a0;
+  opacity: .5;
+}
+#tab-rickshaw-realtime #rickshaw-realtime_y_axis {
+  position: absolute;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  width: 40px;
+  left: 0;
+  z-index: 1;
+}
+#tab-rickshaw-realtime #rickshaw-realtime_y_axis .rickshaw_graph .y_ticks path,
+#tab-rickshaw-realtime #rickshaw-realtime_y_axis .rickshaw_graph .x_ticks_d3 path {
+  fill: none;
+  stroke: none;
+}
+#tab-rickshaw-realtime #rickshaw-realtime_y_axis .rickshaw_graph .y_ticks text,
+#tab-rickshaw-realtime #rickshaw-realtime_y_axis .rickshaw_graph .x_ticks_d3 text {
+  opacity: 0.35;
+  font-family: 'Montserrat';
+  font-size: 11px;
+}
+#tab-rickshaw-bars #rickshaw-stacked-bars.rickshaw_graph .detail .dot {
+  border-radius: 50px;
+}
+#tab-rickshaw-bars #rickshaw-stacked-bars.rickshaw_graph .detail .x_label {
+  display: none;
+}
+#tab-rickshaw-bars #rickshaw-stacked-bars.rickshaw_graph .detail .item {
+  line-height: 1.4;
+  padding: 0.5em;
+}
+#tab-rickshaw-bars #rickshaw-stacked-bars .detail_swatch {
+  float: right;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px 0 0;
+}
+#tab-rickshaw-bars #rickshaw-stacked-bars.rickshaw_graph .detail .date {
+  font-size: 11px;
+  color: #a0a0a0;
+  opacity: .5;
+}
+#tab-rickshaw-slider #rickshaw-slider {
+  height: 500px;
+}
+#tab-rickshaw-slider .rickshaw_graph .x_grid_d3 .tick {
+  stroke-opacity: 0;
+}
+#tab-rickshaw-slider .rickshaw_graph .y_ticks path,
+#tab-rickshaw-slider .rickshaw_graph .x_ticks_d3 path {
+  stroke: none;
+}
+#tab-rickshaw-slider .rickshaw_graph .y_ticks text,
+#tab-rickshaw-slider .rickshaw_graph .x_ticks_d3 text {
+  font-family: 'Montserrat';
+  font-size: 11px;
+}
+#tab-rickshaw-slider .rickshaw_range_slider_preview .frame {
+  opacity: 0;
+}
+#tab-rickshaw-slider .rickshaw_range_slider_preview .left_handle,
+#tab-rickshaw-slider .rickshaw_range_slider_preview .right_handle {
+  fill: #000;
+  fill-opacity: 0.1 !important;
+}
+#tab-rickshaw-slider .slider {
+  position: absolute;
+  top: 0;
+  height: 93px;
+  overflow: hidden;
+}
+#tab-rickshaw-slider .chart {
+  position: absolute;
+  bottom: 40px;
+  top: 150px;
+  left: 33px;
+  right: 0;
+  width: auto;
+}
+#tab-rickshaw-slider .chart .x_tick.plain .title {
+  font-family: 'Montserrat';
+  font-size: 11px;
+}
+#tab-rickshaw-slider .y_axis {
+  bottom: 0;
+  position: absolute;
+  top: 150px;
+  width: 40px;
+  left: -6px;
+}
+#tab-rickshaw-slider .rickshaw_graph .x_tick {
+  border-color: transparent;
+}
+#tab-rickshaw-slider .rickshaw_graph .x_tick .title {
+  bottom: -24px;
+  left: -15px;
+}
+
+/*------------------------------------------------------------------
+[9. Progress Indicators]
+*/
+.progress {
+  height: 4px;
+  background-color: rgba(98, 98, 98, 0.2);
+  background-image: none;
+  box-shadow: none;
+  border-radius: 1px;
+}
+.progress.transparent {
+  background-color: rgba(0, 0, 0, 0.28);
+}
+.progress.progress-small {
+  height: 3px;
+}
+/* Circular Progress : indeterminate color
+------------------------------------
+*/
+.progress-bar-indeterminate {
+  background: url('../img/progress/progress-bar-master.svg') no-repeat top left;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.progress-bar-indeterminate.progress-bar-primary {
+  background-image: url('../img/progress/progress-bar-primary.svg');
+  background-color: transparent;
+}
+.progress-bar-indeterminate.progress-bar-complete {
+  background-image: url('../img/progress/progress-bar-complete.svg');
+  background-color: transparent;
+}
+.progress-bar-indeterminate.progress-bar-success {
+  background-image: url('../img/progress/progress-bar-success.svg');
+  background-color: transparent;
+}
+.progress-bar-indeterminate.progress-bar-info {
+  background-image: url('../img/progress/progress-bar-info.svg');
+  background-color: transparent;
+}
+.progress-bar-indeterminate.progress-bar-warning {
+  background-image: url('../img/progress/progress-bar-warning.svg');
+  background-color: transparent;
+}
+.progress-bar-indeterminate.progress-bar-danger {
+  background-image: url('../img/progress/progress-bar-danger.svg');
+  background-color: transparent;
+}
+.progress-bar-indeterminate.progress-bar-master {
+  background-image: url('../img/progress/progress-bar-master.svg');
+  background-color: transparent;
+}
+/* Progress Bar
+------------------------------------
+*/
+.progress-bar {
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #626262;
+  background-image: none;
+  -webkit-transition: all 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -ms-transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+/* Progress Bar : Color Options
+------------------------------------
+*/
+.progress-bar-primary {
+  background-color: #6d5cae;
+  background-image: none;
+}
+.progress-bar-complete {
+  background-color: #48b0f7;
+  background-image: none;
+}
+.progress-bar-success {
+  background-color: #10cfbd;
+  background-image: none;
+}
+.progress-bar-info {
+  background-color: #3b4752;
+  background-image: none;
+}
+.progress-bar-warning {
+  background-color: #f8d053;
+  background-image: none;
+}
+.progress-bar-danger {
+  background-color: #f55753;
+  background-image: none;
+}
+.progress-bar-white {
+  background-color: #ffffff;
+  background-image: none;
+}
+.progress-bar-black {
+  background-color: #000000;
+  background-image: none;
+}
+.progress-info .bar,
+.progress .bar-info {
+  background-color: #232b31;
+  background-image: none;
+}
+.progress-warning .bar,
+.progress .bar-warning {
+  background-color: #957d32;
+  background-image: none;
+}
+.progress-danger .bar,
+.progress .bar-danger {
+  background-color: #933432;
+  background-image: none;
+}
+.progress-white .bar,
+.progress .bar-white {
+  background-color: #ffffff;
+  background-image: none;
+}
+.progress-success.progress-striped .bar,
+.progress-striped .bar-success {
+  background-color: #10cfbd;
+}
+.progress-info.progress-striped .bar,
+.progress-striped .bar-info {
+  background-color: #3b4752;
+}
+/* Circular Progress : indeterminate 
+------------------------------------
+*/
+.progress-circle-indeterminate {
+  background: url('../img/progress/progress-circle-master.svg') no-repeat top left;
+  width: 50px;
+  height: 50px;
+  background-size: 100% auto;
+  margin: 0 auto;
+}
+.progress-circle-indeterminate.progress-circle-warning {
+  background-image: url('../img/progress/progress-circle-warning.svg');
+}
+.progress-circle-indeterminate.progress-circle-danger {
+  background-image: url('../img/progress/progress-circle-danger.svg');
+}
+.progress-circle-indeterminate.progress-circle-info {
+  background-image: url('../img/progress/progress-circle-info.svg');
+}
+.progress-circle-indeterminate.progress-circle-primary {
+  background-image: url('../img/progress/progress-circle-primary.svg');
+}
+.progress-circle-indeterminate.progress-circle-success {
+  background-image: url('../img/progress/progress-circle-success.svg');
+}
+.progress-circle-indeterminate.progress-circle-complete {
+  background-image: url('../img/progress/progress-circle-complete.svg');
+}
+/* Circular Progress 
+------------------------------------
+*/
+.progress-circle {
+  display: block;
+  height: 45px;
+  margin-top: 13%;
+  margin-right: 10%;
+  position: relative;
+  width: 45px;
+  -webkit-backface-visibility: hidden;
+}
+.progress-circle.progress-circle-warning .pie .half-circle {
+  border-color: #f8d053;
+}
+.progress-circle.progress-circle-danger .pie .half-circle {
+  border-color: #f55753;
+}
+.progress-circle.progress-circle-info .pie .half-circle {
+  border-color: #3b4752;
+}
+.progress-circle.progress-circle-primary .pie .half-circle {
+  border-color: #6d5cae;
+}
+.progress-circle.progress-circle-success .pie .half-circle {
+  border-color: #10cfbd;
+}
+.progress-circle.progress-circle-complete .pie .half-circle {
+  border-color: #48b0f7;
+}
+.progress-circle.progress-circle-thick .pie .half-circle,
+.progress-circle.progress-circle-thick .shadow {
+  border-width: 4px;
+}
+.progress-circle .pie {
+  clip: rect(0, 45px, 45px, 22.5px);
+  height: 45px;
+  position: absolute;
+  width: 45px;
+}
+.progress-circle .pie .half-circle {
+  border: 3px solid #626262;
+  border-radius: 50%;
+  clip: rect(0, 22.5px, 45px, 0);
+  height: 45px;
+  position: absolute;
+  width: 45px;
+}
+.progress-circle .shadow {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}

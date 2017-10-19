@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Main</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+ <meta-data android:name="app_uuid" android:value="d133c537-b80d-4403-a240-3c94df7c73b5"/>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/washington.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link href="js/nvd3/nv.d3.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/pages.css" rel="stylesheet" type="text/css" />
+  <script src="js/webfont.js"></script>
+ 
+  <link rel="stylesheet" type="text/css" href="js/tooltipster/css/tooltipster.css" />
+  <link rel="stylesheet" type="text/css" href="js/tooltipster/css/themes/tooltipster-salesup.css" />
+  
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/logoStandford32.ico">
+  <link rel="apple-touch-icon" href="images/logoStandford32.ico">
+
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <section class="w-section mobile-wrapper">
+
+    <div class="page-content" id="main-stack">
+      <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+        <div class="w-container">
+          <nav class="w-nav-menu nav-menu" role="navigation">
+            <div class="nav-menu-header">
+              <div class="logo">Sales Up!</div>
+              <div class="slogan">Your personal incentive cloud</div>
+            </div>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="main.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-cloud"></div>
+              </div>
+              <div class="nav-menu-titles">Main</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="performance.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-stats-bars"></div>
+              </div>
+              <div class="nav-menu-titles">Performance</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="badges.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ribbon-b"></div>
+              </div>
+              <div class="nav-menu-titles">Achievements</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="bonus.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-plus"></div>
+              </div>
+              <div class="nav-menu-titles">Bonus</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="challenges.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-pulse-strong"></div>
+              </div>
+              <div class="nav-menu-titles">Challenges</div>
+              <div class="nav-menu-text-right">2</div>
+            </a>
+			<a class="w-clearfix w-inline-block nav-menu-link" href="friends.html" data-load="1">
+				 <div class="icon-list-menu">
+				<div class="icon ion-ios-people"></div>
+				 </div>
+				 <div class="nav-menu-titles">Friends</div>
+				 <div class="nav-menu-text-right">2</div>
+			</a>
+			<a class="w-clearfix w-inline-block nav-menu-link" href="social.html" data-load="1">
+				 <div class="icon-list-menu">
+				<div class="icon ion-ios-star"></div>
+				 </div>
+				 <div class="nav-menu-titles">Social</div>
+				 <div class="nav-menu-text-right">2</div>
+			</a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="addnew.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-gear"></div>
+              </div>
+              <div class="nav-menu-titles">Profile & Settings</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link last" href="terms.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-bookmarks"></div>
+              </div>
+              <div class="nav-menu-titles">User guide</div>
+            </a>
+            <div class="separator-bottom"></div>
+            <div class="separator-bottom"></div>
+            <div class="separator-bottom"></div>
+          </nav>
+          <div class="wrapper-mask" data-ix="menu-mask"></div>
+          <div class="navbar-title">Sales Up!</div>
+          <div class="w-nav-button navbar-button left" id="menu-button" data-ix="hide-navbar-icons">
+            <div class="navbar-button-icon home-icon">
+              <div class="bar-home-icon"></div>
+              <div class="bar-home-icon"></div>
+              <div class="bar-home-icon"></div>
+            </div>
+          </div>
+          <a class="w-inline-block w-clearfix navbar-button right"  href="#" data-load="1">
+            <div class="navbar-button-icon icon ion-ios-refresh-empty"></div>
+          </a>
+        </div>
+      </div>
+      <div class="body padding">
+	      <div class="w-row">
+		      <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+		      		<h2 align="center" style="padding-top: 35%" id="rank_top">#6</h2>
+		      		<p class="description-new" align="center">in TOP 10</p>
+		      </div>
+		      <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+		      		<div class="logo-profile smaller" align="center"></div>
+		      </div>
+		     <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+		      		<h2 align="center" style="padding-top: 35%" id="rank_region">#1</h2>
+		      		<p class="description-new" align="center">in region</p>
+		      </div>
+	      </div>
+	      <h2 class="title-new" align="center" id="name_surname">Max Kornev</h2>
+
+              <div class="separator-button"></div>
+              <h2 class="grey-heading-title" align="center" id="message" style="line-height: 1.5">Hello world!</h2> 
+        <div class="separator-button"></div>
+        <div>
+              		<label class="label-form" for="full-name-field">YOUR PERFORMANCE</label>
+			  			<a class="category-link" onclick="update_chart_days()">DAY</a>
+			  			<a class="category-link" onclick="refresh_mon()">MON</a>
+			  			<a class="category-link" onclick="refresh_qtr()">QTR</a>
+			  			<div class="panel-body">
+									<div class="ar-2-1">
+		                        <div class="widget-4-chart line-chart " data-line-color="success" data-area-color="success-light" data-y-grid="false" data-points="false" data-stroke-width="2">
+										<svg></svg>
+						                </div>
+										</div>
+                     			</div>
+              <div class="w-row">
+		      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+		      		<p align="center" id="amt">AMT: –</p>
+		      </div>
+		     <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+		      		<p  align="center" id="qty">QTY: –</p>
+		      </div>
+	      </div>
+	        <div>
+		        <div class="separator-fields"></div>
+					<label class="label-form" for="full-name-field">CHALLENGES</label>
+					<div class="w-row tooltip" style="padding-top: 2%" id="challenges">
+						
+					</div>
+            </div>
+            <div class="separator-fields"></div>
+            <div>
+		        <div class="separator-fields"></div>
+				<label class="label-form" for="full-name-field">LAST BADGES</label>
+				 <div class="w-row" style="padding-top: 2%" id="achievements">
+
+	      		</div>
+            </div>
+            <div class="separator-fields"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content loading-mask" id="new-stack">
+      <div class="loading-icon">
+        <div class="navbar-button-icon icon ion-load-d"></div>
+      </div>
+    </div>
+    <div class="shadow-layer"></div>
+  </section>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/framework.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+   <script type="text/javascript" src="js/moment.min.js"></script>
+   
+   <script src="js/nvd3/lib/d3.v3.js" type="text/javascript"></script>
+    <script src="js/nvd3/nv.d3.min.js" type="text/javascript"></script>
+    <script src="js/nvd3/src/utils.js" type="text/javascript"></script>
+    <script src="js/nvd3/src/tooltip.js" type="text/javascript"></script>
+    <script src="js/nvd3/src/interactiveLayer.js" type="text/javascript"></script>
+    <script src="js/nvd3/src/models/axis.js" type="text/javascript"></script>
+    <script src="js/nvd3/src/models/line.js" type="text/javascript"></script>
+    <script src="js/nvd3/src/models/lineWithFocusChart.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="js/salesup/get_content.js"></script>
+    
+<script type='text/javascript'>
+var chart;
+		var ticks = [];
+		var data = [{key: "Performance", values:
+		[
+	        {
+			"x": 1,
+			"y": 0
+			},
+			{
+			"x": 2,
+			"y": 0
+			},
+			{
+			"x": 3,
+			"y": 0
+			},
+			{
+			"x": 4,
+			"y": 0
+			},
+			{
+			"x": 5,
+			"y": 0
+			},
+			{
+			"x": 6,
+			"y": 0
+			},
+			{
+			"x": 7,
+			"y": 0
+			}
+	    ],"area": true }];
+	    
+    nv.addGraph(function() {
+        chart = nv.models.lineChart()
+            .x(function(d) {
+                return d.x
+            })
+            .y(function(d) {
+                return d.y
+            })
+            .color(["4fd2c2"])
+            .forceY([0, 2])
+            .useInteractiveGuideline(false)
+         //       .transitionDuration(300)
+            .showYAxis(false)
+            .showXAxis(true)
+                
+
+        .margin({
+            top: 5,
+            right: 7,
+            bottom: 20,
+            left: 7
+        })
+		
+        .showLegend(false)
+		.interpolate("monotone")
+        ;
+	
+		chart.xAxis
+			.tickValues([1, 2, 3, 4, 5, 6, 7])
+			.tickFormat(function(d, i) {
+          return ['', '9', '11', '13', '15', '17', '19', '21'][d];
+        	});
+
+
+        d3.select('.widget-4-chart svg')
+            .datum(data)
+            .call(chart);
+
+        nv.utils.windowResize(function() {
+            chart.update();
+        });
+
+        $('.widget-4-chart').data('chart', chart);
+
+        return chart;
+    });
+</script>
+
+<script type='text/javascript'> 
+	window.onload = get_content();
+</script>
+
+<script type='text/javascript'> 
+function refresh_mon(){
+		var chart;
+		var ticks = [];
+		var data2 = [{key: "Performance", values:
+		[
+	        {
+			"x": 1,
+			"y": 5
+			},
+			{
+			"x": 2,
+			"y": 3
+			},
+			{
+			"x": 3,
+			"y": 8
+			},
+			{
+			"x": 4,
+			"y": 7
+			},
+			{
+			"x": 5,
+			"y": 11
+			}
+	    ],"area": true }];
+	    
+    nv.addGraph(function() {
+        chart = nv.models.lineChart()
+            .x(function(d) {
+                return d.x
+            })
+            .y(function(d) {
+                return d.y
+            })
+            .color(["4fd2c2"])
+            .forceY([0, 2])
+            .useInteractiveGuideline(false)
+          //      .transitionDuration(300)
+            .showYAxis(false)
+            .showXAxis(true)
+                
+
+        .margin({
+            top: 5,
+            right: 7,
+            bottom: 20,
+            left: 7
+        })
+		
+        .showLegend(false)
+		.interpolate("monotone")
+        ;
+	
+	//	chart.xAxis
+	//		.tickValues([1, 3, 5, 7])
+	//		.tickFormat(function(d, i) {
+    //      return ['', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'][d];
+    //    	});
+		ticks = [1,2,3,4,5];
+        chart.xAxis
+        	.tickValues(ticks)
+        	.tickFormat(function(d, i) {
+          return ['','W1', 'W2', 'W3', 'W4','W5'][d];
+      	});
+
+        d3.select('.widget-4-chart svg').datum(data2).transition().duration(500).call(chart);
+		chart.update();
+    });
+}
+</script>
+
+<script type='text/javascript'> 
+function refresh_qtr(){
+		var chart;
+		var ticks = [];
+		var data3 = [{key: "Performance", values:
+		[
+	        {
+			"x": 1,
+			"y": 10
+			},
+			{
+			"x": 2,
+			"y": 30
+			},
+			{
+			"x": 3,
+			"y": 20
+			},
+			{
+			"x": 4,
+			"y": 50
+			}
+	    ],"area": true }];
+	    
+    nv.addGraph(function() {
+        chart = nv.models.lineChart()
+            .x(function(d) {
+                return d.x
+            })
+            .y(function(d) {
+                return d.y
+            })
+            .color(["4fd2c2"])
+            .forceY([0, 2])
+            .useInteractiveGuideline(false)
+             //   .transitionDuration(300)
+            .showYAxis(false)
+            .showXAxis(true)
+                
+
+        .margin({
+            top: 5,
+            right: 7,
+            bottom: 20,
+            left: 7
+        })
+		
+        .showLegend(false)
+		.interpolate("monotone");
+		
+		ticks = [1,2,3,4];
+        chart.xAxis
+        	.tickValues(ticks)
+        	.tickFormat(function(d, i) {
+          return ['','M1', 'M2', 'M3', 'M4'][d];
+      	});
+
+        d3.select('.widget-4-chart svg').datum(data3).transition().duration(500).call(chart);
+		chart.update();
+    });
+}
+</script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+    
+</body>
+</html>
